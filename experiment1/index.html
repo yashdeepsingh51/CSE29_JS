@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
      <h1>Student Result Calculator</h1>
-    <h3>Enter Number of Subjects</h3>
     <form action="#">
-        <input type="number" value="subject"min="1"max="5"id="subject">
+        <label>Enter Number of Subjects</label><br/>
+        <input type="number" value="subject"min="1"max="5"id="subject"><br/><br/>
     </form>
     <button onclick="calculateResult()">Calculate Result</button>
-    <div id="result"></div> 
+    <div id="result"></div>
     <script src="./script.js"></script>
+    </div>
 </body>
+</html>
