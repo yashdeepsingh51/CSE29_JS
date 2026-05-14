@@ -1,60 +1,58 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
-/* Center screen */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #eeeeee;
 }
 
-/* Card */
 .card {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
   text-align: center;
-  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Title */
-.card h1 {
+h1 {
   margin-bottom: 20px;
+  color: #222;        /* dark gray (best look) */
+  font-weight: bold;  /* thoda strong */
 }
 
-/* Counter */
-.card h2 {
+h2 {
   font-size: 40px;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  color: #000;      
+  font-weight: bold; 
 }
 
-/* Buttons row */
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   margin-bottom: 15px;
 }
 
-/* Buttons */
 button {
-  background-color: #1e88e5;
-  color: white;
+  padding: 10px 25px;
   border: none;
-  padding: 10px 15px;
+  background-color: #2d9af3; 
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
   border-radius: 6px;
   cursor: pointer;
 }
-
 button:hover {
-  background-color: #1565c0;
+  background-color: #125aa0;
 }
 
-/* Reset button */
 .reset {
-  width: 100%;
+  background-color: #3b94dd;
 }

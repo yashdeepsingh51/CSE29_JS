@@ -4,40 +4,43 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-function App() {
-   const [count, setCount] = useState(0);
 
-  return (
-    <>
-      
+function App() {
+  const [count, setCount] = useState(0);
+
+ 
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+ 
+  const decrement = () => {
+    setCount(count - 1);
+  };
 
   
+  const reset = () => {
+    setCount(0);
+  };
+
+  return (
     <div className="container">
       <div className="card">
-        <h1>
-          React Counter <br /> Application
-        </h1>
+        <h1>React Counter Application</h1>
 
         <h2>{count}</h2>
 
         <div className="buttons">
-          <button onClick={() => setCount(count + 1)}>
-            Increment (+)
-          </button>
-
-          <button onClick={() => setCount(count - 1)}>
-            Decrement (-)
-          </button>
+          <button onClick={increment}>Increment (+)</button>
+          <button onClick={decrement}>Decrement (-)</button>
         </div>
 
-        <button className="reset" onClick={() => setCount(0)}>
+        <button className="reset" onClick={reset}>
           Reset
         </button>
       </div>
     </div>
-  
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
